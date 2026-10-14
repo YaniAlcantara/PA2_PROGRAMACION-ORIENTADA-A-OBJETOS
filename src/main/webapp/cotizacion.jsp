@@ -70,7 +70,7 @@
     <h2>¿Qué desea cotizar?</h2>
     <p>Indique la cantidad de cada producto (deje 0 si no lo necesita).</p>
 
-    <form action="resultado.jsp" method="post" novalidate>
+    <form action="resultados.jsp" method="post" novalidate>
         <input type="hidden" name="ruc" value="<%= ruc %>">
         <input type="hidden" name="razonsocial" value="<%= razonsocial %>">
         <input type="hidden" name="telefono" value="<%= telefono %>">
