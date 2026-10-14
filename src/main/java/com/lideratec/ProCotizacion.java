@@ -1,12 +1,12 @@
 package com.lideratec;
 
 public class ProCotizacion {
-    // Calcula el subtotal del producto
+    // Calculamos el subtotal del producto
     public static double calcularSubtotal(double precio, int cantidad) {
         double subtotal = precio * cantidad;
         return Math.round(subtotal * 100.0) / 100.0;
 }
-    // Determina el porcentaje de descuento
+    // Determinamos el porcentaje de descuento
     public static double calcularPorcentajeDescuento(int cantidad) {
         double descuento = 0;
 
@@ -19,7 +19,7 @@ public class ProCotizacion {
         return descuento;
     }
 
-    // Calcula el importe del descuento
+    // Calculamos el importe del descuento
     public static double calcularDescuento(double subtotal, int cantidad) {
         double porcentaje = calcularPorcentajeDescuento(cantidad);
         double descuento = subtotal * porcentaje / 100;
@@ -27,7 +27,7 @@ public class ProCotizacion {
         return Math.round(descuento * 100.0) / 100.0;
     }
 
-    // Calcula el total después del descuento
+    // Calculamos el total después del descuento
     public static double calcularTotal(double subtotal, int cantidad) {
         double descuento = calcularDescuento(subtotal, cantidad);
         double total = subtotal - descuento;
