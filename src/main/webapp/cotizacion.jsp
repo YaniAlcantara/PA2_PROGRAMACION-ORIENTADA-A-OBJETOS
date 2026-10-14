@@ -65,6 +65,31 @@
 %>
        <h1>BIENVENIDO, <%= razonsocial.toUpperCase() %> </h1>
        <h2>¿Que desea cotizar?</h2>
+<% if (datosValidos) { %>
+    <h1>BIENVENIDO, <%= razonsocial.toUpperCase() %></h1>
+    <h2>¿Qué desea cotizar?</h2>
+    <p>Indique la cantidad de cada producto (deje 0 si no lo necesita).</p>
+
+    <form action="resultado.jsp" method="post" novalidate>
+        <input type="hidden" name="ruc" value="<%= ruc %>">
+        <input type="hidden" name="razonsocial" value="<%= razonsocial %>">
+        <input type="hidden" name="telefono" value="<%= telefono %>">
+        <input type="hidden" name="mail" value="<%= mail %>">
+
+        <p>Laptop Core i5: <input type="text" name="cant1" value="0"></p>
+        <p>Monitor 24 pulgadas: <input type="text" name="cant2" value="0"></p>
+        <p>Teclado mecánico: <input type="text" name="cant3" value="0"></p>
+        <p>Mouse inalámbrico: <input type="text" name="cant4" value="0"></p>
+        <p><input type="submit" value="Cotizar"></p>
+    </form>
+<% } else { %>
+    <h1>Revise los datos ingresados</h1>
+    <% if (!msgRuc.equals("")) { %><p><%= msgRuc %></p><% } %>
+    <% if (!msgRazon.equals("")) { %><p><%= msgRazon %></p><% } %>
+    <% if (!msgTelefono.equals("")) { %><p><%= msgTelefono %></p><% } %>
+    <% if (!msgMail.equals("")) { %><p><%= msgMail %></p><% } %>
+    <p><a href="index.jsp">Volver</a></p>
+<% } %>
 
 
 
