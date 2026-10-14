@@ -39,4 +39,4 @@ Aplicación web desarrollada en un entorno JSP/Tomcat que resuelve un caso prác
 
 ## Enlace del Video Expositivo
 Puedes ver la sustentación completa del equipo (con cámaras encendidas y explicación de código) en el siguiente enlace de YouTube[cite: 2, 3]:
-👉 [Ver Exposición en YouTube]()
+👉 [Ver Exposición en YouTube](https://youtu.be/d8bKBOrNdOY)
