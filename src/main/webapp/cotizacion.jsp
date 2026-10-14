@@ -63,8 +63,7 @@
     && msgTelefono.equals("") && msgMail.equals("");
 
 %>
-       <h1>BIENVENIDO, <%= razonsocial.toUpperCase() %> </h1>
-       <h2>¿Que desea cotizar?</h2>
+
 <% if (datosValidos) { %>
     <h1>BIENVENIDO, <%= razonsocial.toUpperCase() %></h1>
     <h2>¿Qué desea cotizar?</h2>
